@@ -40,7 +40,57 @@ main{
         opacity: .7;
     }
 }
-menu{
+.icon-mobile{
+    display: none;
+    position: absolute;
+    z-index: 160;
+    font-size: 2rem;
+    padding-left: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.menu-mobile.active{
+    visibility: visible;
+    width: 10rem;
+    height: 100vh;
+    overflow-y: auto;
+}
+.menu-mobile{
+    position: absolute;
+    z-index: 150;
+    border: rgb(73, 72, 72) solid 2px;
+    width: 0rem;
+    height: 0vh;
+    visibility: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(3, 3, 3, 0.315);
+    gap: 1rem;
+    transition: 1s;
+}
+.menu-mobile a{
+    font-family: FreeMono, monospace;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .3rem;
+    color: white;
+}
+.menu-mobile a:hover{
+    font-family: FreeMono, monospace;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .3rem;
+    color: white;
+}
+.menu-pc{
     position: absolute;
     z-index: 100;
     width: 100%;
@@ -52,7 +102,7 @@ menu{
     gap: 1rem;
 }
 
-menu a{
+.menu-pc a{
     font-family: FreeMono, monospace;
     text-decoration: none;
     font-size: 1.2rem;
@@ -62,7 +112,7 @@ menu a{
     color: white;
 }
 
-menu a:hover{
+.menu-pc a:hover{
     color: rgb(167, 167, 172);
     transition: color 3s;
 }
@@ -72,18 +122,20 @@ menu a:hover{
     height: 100%;
     top: 12rem;
     text-align: center;
-    z-index: 100;
+    z-index: 80;
     width: 100%;
     color: white;
 }
 
 .banner-text h1{
+    position: relative;
     font-family: Chalkduster, fantasy;
     font-weight: 400;
     font-size: 5rem;
     animation: text 2s;
 }
 .banner-text p{
+    position: relative;
     font-family: FreeMono, monospace;
     animation: text 4s;
     font-size: 1.2rem;
@@ -91,14 +143,14 @@ menu a:hover{
 
 @keyframes text{
     0%{
+        right: 60rem;
         opacity: 0;
-        padding-right: 60rem;
     }50%{
-        opacity: 0;
+        opacity: .4;
     }
     100%{
         opacity: 1;
-        padding: 0;
+        right: 0;
     }
 }
 
@@ -144,20 +196,27 @@ menu a:hover{
     width: 100%;
 }
 @media (max-width: 600px){
-    menu{
+    .icon-mobile{
+        padding-top: 2rem;
+        display: flex;
+    }
+    .banner{
+        height: 100vh;
+    }
+    .menu-pc{
         display: none;
     }
     .banner-text{
-        top: 8rem;
+        top: 20rem;
     }
     .banner-text h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .banner-text p{
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .banner-icons{
-        font-size: 1.5rem;
-        top: 4rem;
+        font-size: 1.8rem;
+        top: 17rem;
     }
 }
