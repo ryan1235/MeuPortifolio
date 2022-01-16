@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Portifólio</title>
 </head>
+
 <body>
     <div class="conteineir">
         <header>
@@ -15,41 +18,91 @@
                 <i id="btn" class="fas fa-align-justify"></i>
             </div>
             <menu id="navmobile" class="menu-mobile">
-                <a href="#">Sobre-me</a>
-                <a href="#">Tecnologias</a>
-                <a href="#">Projetos</a>
+                <a href="#">sobre mim</a>
+                <a href="#tec">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
                 <a href="#">contatos</a>
             </menu>
             <menu class="menu-pc">
-                <a href="#">Sobre-me</a>
-                <a href="#">Tecnologias</a>
-                <a href="#">Projetos</a>
+                <a href="#">sobre mim</a>
+                <a href="#tec">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
                 <a href="#">contatos</a>
             </menu>
         </header>
         <main>
-        <section>
-            <div class="banner">
-                <img src="img/Banner.png" alt="">
-            <div class="banner-text content">
-                <h1>Ryan Luca</h1>
-                <p>Estudante front-and</p>
-            </div>
-            <div class="banner-icons">
-                <i class="fab fa-html5" id="html"></i>
-                <i class="fab fa-css3-alt" id="css"></i>
-                <i class="fab fa-js-square" id="js"></i>
-            </div>
-            </div>
-        </section>
-        <section>
-            <div class="sobre-mim">
-                
-            </div>
-        </section>
+            <section>
+                <div class="banner">
+                    <img src="img/Banner.png" alt="">
+                    <div class="banner-text content">
+                        <h1>Ryan Luca</h1>
+                        <p>Estudante front-and</p>
+                    </div>
+                    <div class="banner-icons">
+                        <i class="fab fa-html5" id="html"></i>
+                        <i class="fab fa-css3-alt" id="css"></i>
+                        <i class="fab fa-js-square" id="js"></i>
+                    </div>
+                </div>
+            </section>
+            <section id="tec">
+                <div class="Tecnologias">
+                    <h2>Tecnologias</h2>
+                    <p>algumas tecnologias que usei para criar e desenvolver este sites e os projetos linkados a ele</p>
+                    <div class="tec-conteiner">
+                        <div class="tec-item">
+                            <div class="text-tec">
+                                <img src="https://img.icons8.com/windows/32/000000/bootstrap.png"/>
+                                <h3>Bootstrap</h3>
+                            </div>
+                            <p>Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes
+                                de interface e front-end para sites e aplicações web usando HTML, CSS e JavaScript,
+                                baseado em modelos de design para a tipografia, melhorando a experiência do usuário em
+                                um site amigável e responsivo.</p>
+                        </div>
+                        <div class="tec-item">
+                            <div class="text-tec">
+                                <img src="https://img.icons8.com/ios/32/000000/jquery.png"/>
+                                <h3>jQuery</h3>
+                            </div>
+                            <p>jQuery é uma biblioteca de funções JavaScript que interage com o HTML, desenvolvida para
+                                simplificar os scripts interpretados no navegador do cliente. Usada por cerca de 74.4%
+                                dos 10 mil sites mais visitados do mundo, jQuery é a mais popular das bibliotecas
+                                JavaScript.</p>
+                        </div>
+
+                        <div class="tec-item">
+                            <div class="text-tec">
+                                <img src="https://img.icons8.com/windows/32/000000/font-awesome-squared.png"/>
+                                <h3>Font Awesome</h3>
+                            </div>
+                            <p>Font Awesome é um conjunto de ferramentas de fontes e ícones com base em CSS e LESS. Foi feito por Dave Gandy para uso com o Twitter Bootstrap e mais tarde foi incorporado no BootstrapCDN.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="projetos" class="projetos">
+                <h2>Projetos</h2>
+                <p>Projetos/Sites criados</p>
+                <div class="projetos-conteiner">
+                    <div class="projetos-itens">
+                    <h3>Estudando JavaScript</h3>
+                    <img src="img/DesenvolvendoJS.png" alt="Estudando JavaScript">
+                    <p>Site Simples aonde eu coloco todo o meu progreço na linguagem JavaScript</p>
+                    <div class="projetos-botao">
+                        <a href="https://ryan1235.github.io/estudandojavaS/"><img src="https://img.icons8.com/external-soft-fill-juicy-fish/24/000000/external-site-coding-and-development-soft-fill-soft-fill-juicy-fish.png"/>Demo</a>
+                        <a href="https://github.com/ryan1235/estudandojavaS"><img src="https://img.icons8.com/color-glass/24/000000/github.png"/>GitHub</a>
+                    </div>
+                </div>
+                </div>
+            </section>
         </main>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 <script src="js/menu.js"></script>
+
 </html>

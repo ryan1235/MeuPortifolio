@@ -8,6 +8,7 @@ body{
     overflow-x: hidden;
 }
 .conteiner{
+    position: relative;
     overflow-x: hidden;
     background-color: black;
 }
@@ -18,7 +19,7 @@ main{
 .banner{
     position: relative;
     width:  100%;
-    height: 80vh;
+    height: 100vh;
     background-color: black;
 }
 .banner img{
@@ -42,7 +43,7 @@ main{
 }
 .icon-mobile{
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 160;
     font-size: 2rem;
     padding-left: 1rem;
@@ -56,7 +57,7 @@ main{
     overflow-y: auto;
 }
 .menu-mobile{
-    position: absolute;
+    position: fixed;
     z-index: 150;
     border: rgb(73, 72, 72) solid 2px;
     width: 0rem;
@@ -190,11 +191,104 @@ main{
         opacity: 1;
     }
 }
-.sobre-mim{
-    background-color: black;
-    height: 10rem;
-    border-top: solid 5px;
+.Tecnologias{
+    position: relative;
+    background-image: linear-gradient(to left bottom, #1b226a, #1b226a, #1b226a, #1b226a, #1b226a, #282068, #321f66, #3a1d64, #49195f, #551459, #5f1152, #670e4b);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    border-top: solid 5px rgba(255, 255, 255, 0.459);
     width: 100%;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.459);
+}
+.Tecnologias h2{
+    margin-top: 3rem;
+}
+.Tecnologias p{
+    margin-top: 2rem;
+    font-family: FreeMono, monospace;
+}
+.tec-conteiner{
+    position: relative;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: tec 3s;
+}
+.text-tec{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.text-tec h3{
+    font-size: 1rem;
+}
+.tec-item{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 18rem;
+}
+
+.tec-item p{
+    font-size: 0.8rem;
+    align-items: baseline;
+    font-family: FreeMono, monospace;
+}
+
+@keyframes tec{
+    0%{
+        opacity: 0;
+        left: -50rem;
+    }100%{
+        opacity: 1;
+        left: 0;
+    }
+}
+.projetos{
+    position: relative;
+    background-image: linear-gradient(to left top, #1b226a, #1b226a, #1b226a, #1b226a, #1b226a, #282068, #321f66, #3a1d64, #49195f, #551459, #5f1152, #670e4b);
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+.projetos-conteiner{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+
+.projetos-itens{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    color: white;
+}
+
+.projetos-itens h3{
+    padding: .5rem;
+}
+.projetos-itens p{
+    padding: 1;
+}
+.projetos-itens img{
+    border-radius: 1rem;
+}
+.projetos-botao{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.projetos-botao a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+.projetos-botao img{
+    border-radius: none;
 }
 @media (max-width: 600px){
     .icon-mobile{
