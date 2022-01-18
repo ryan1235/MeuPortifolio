@@ -1,4 +1,8 @@
 const btnMobile = document.getElementById('btn')
+const btnMobileA = document.getElementById('btn-A')
+const btnMobileB = document.getElementById('btn-B')
+const btnMobileC = document.getElementById('btn-C')
+const btnMobileD = document.getElementById('btn-D')
 
 function togglemenu(){
     const navmobile = document.getElementById('navmobile')
@@ -6,6 +10,8 @@ function togglemenu(){
 }
 
 btnMobile.addEventListener('click', togglemenu)
-
-const btnMobile2= document.getElementsByClassName('menuMobile')
+btnMobileA.addEventListener('click', togglemenu)
+btnMobileB.addEventListener('click', togglemenu)
+btnMobileC.addEventListener('click', togglemenu)
+btnMobileD.addEventListener('click', togglemenu)
  
