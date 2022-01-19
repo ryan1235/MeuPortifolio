@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
 }
@@ -244,16 +247,18 @@ main{
     align-items: baseline;
     font-family: FreeMono, monospace;
 }
-
-@keyframes tec{
-    0%{
-        opacity: 0;
-        left: -50rem;
-    }100%{
-        opacity: 1;
-        left: 0;
-    }
-}
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+  }
+  
+  [data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
 .projetos{
     position: relative;
     background-image: linear-gradient(to left top, #1b226a, #1b226a, #1b226a, #1b226a, #1b226a, #282068, #321f66, #3a1d64, #49195f, #551459, #5f1152, #670e4b);
