@@ -12,24 +12,30 @@
     <title>Portifólio</title>
 </head>
 
-<body>
+<body id="boby">
+     <!-- início do preloader -->
+  <div id="preloader">
+    <div class="inner">
+        <img src="img/preloader.gif" alt="preloader">
+    </div>
+</div>
     <div class="conteineir">
         <header>
             <div class="icon-mobile">
                 <i id="btn" class="fas fa-align-justify"></i>
             </div>
-            <menu id="navmobile" class="menu-mobile">
+            <nav id="navmobile" class="menu-mobile">
                 <a id="btn-A" href="#">sobre mim</a>
                 <a id="btn-B" href="#tec">Tecnologias</a>
                 <a id="btn-C" href="#projetos">Projetos</a>
                 <a id="btn-D" href="#redes">contatos</a>
-            </menu>
-            <menu class="menu-pc">
+            </nav>
+            <nav class="menu-pc">
                 <a href="#">sobre mim</a>
                 <a href="#tec">Tecnologias</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#redes">contatos</a>
-            </menu>
+            </nav>
         </header>
         <main>
             <section>
@@ -134,6 +140,8 @@
         </div>
     </footer>
 </body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/preloader.js"></script>
 <script src="js/menu.js"></script>
-<script src="js/animaçao.js"></script>
+<script src="js/scroll-suave.js"></script>
 </html>
