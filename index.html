@@ -13,25 +13,26 @@
 </head>
 
 <body id="boby">
-     <!-- início do preloader -->
-  <div id="preloader">
-    <div class="inner">
-        <img src="img/preloader.gif" alt="preloader">
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <img src="img/preloader.gif" alt="preloader">
+        </div>
     </div>
-</div>
     <div class="conteineir">
         <header>
-            <div class="icon-mobile">
-                <i id="btn" class="fas fa-align-justify"></i>
+            <div class="icon-mobile" id="btn">
+                <i class="fas fa-align-justify"></i>
             </div>
             <nav id="navmobile" class="menu-mobile">
-                <a id="btn-A" href="#">sobre mim</a>
+                <a id="btn-A" href="#sobre">sobre mim</a>
                 <a id="btn-B" href="#tec">Tecnologias</a>
                 <a id="btn-C" href="#projetos">Projetos</a>
                 <a id="btn-D" href="#redes">contatos</a>
+                <img id="btn-E" src="https://img.icons8.com/nolan/50/circled-left-2.png"/>
             </nav>
             <nav class="menu-pc">
-                <a href="#">sobre mim</a>
+                <a href="#sobre">sobre mim</a>
                 <a href="#tec">Tecnologias</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#redes">contatos</a>
@@ -87,9 +88,7 @@
                                 feito por Dave Gandy para uso com o Twitter Bootstrap e mais tarde foi incorporado no
                                 BootstrapCDN.</p>
                         </div>
-
                     </div>
-                </div>
             </section>
             <section id="projetos" class="projetos">
                 <h2>Projetos</h2>
@@ -111,42 +110,57 @@
                         <img src="img/ryantube.png" alt="Estudando JavaScript">
                         <p>Site aonde criei uma pagina inicia para meu antigo canal do youtube</p>
                         <div class="projetos-botao">
-                            <a href=https://github.com/ryan1235/ryanyoutube"><img
-                                    src="https://img.icons8.com/external-soft-fill-juicy-fish/24/000000/external-site-coding-and-development-soft-fill-soft-fill-juicy-fish.png" />Demo</a>
+                            <a href=https://ryan1235.github.io/ryanyoutube/"> <img
+                                src="https://img.icons8.com/external-soft-fill-juicy-fish/24/000000/external-site-coding-and-development-soft-fill-soft-fill-juicy-fish.png" />Demo</a>
                             <a href="https://github.com/ryan1235/ryanyoutube"><img
                                     src="https://img.icons8.com/color-glass/24/000000/github.png" />GitHub</a>
                         </div>
                     </div>
                 </div>
-    </section>
-    </main>
-    <footer id="redes">
-        <div class="copy">
-            <img src="img/icons8-programming-96.png" alt="icon">
-            <p>&copy RyanLuca 2022</p>
+            </section>
+            <section class="sobre" id="sobre">
+                <img src="img/avatar-vazio.png  " alt="">
+                <div class="text-sobre">
+                    <h3>Quem Sou?</h3>
+                    <p>Olá me chamo ryan luca tenho 21 anos e sou estudante de front-end!.</p>
+                    <p>Comecei a estudar front-end como uma promeça pra mim mesmo em 2021 aonde meu objetivo maior é vira um full-stack.</p>
+                    <p>Meu amor com tecnologia vem de muito cedo quando ganhei meu primeiro computador com 9 anos de idade, nesta epoca eu foquei meus estudos em hardware e cheguei a ser certificado por marcas como azure e google cloud aonde atualmente trabalho como SysAdmin.</p>
+                    <p>Tambem me deparei muito com a parte de hacking e analise de vulnerabilidade de sistemas e para melhorar mais os meus conhecimento e abrangir o meu ambito de trabalho resolvir foca e aprender sobre desenvolvimento de sites.</p>
+                </div>
+            </section>
+        </main>
+        <footer id="redes">
+            <div class="copy">
+                <img src="img/icons8-programming-96.png" alt="icon">
+                <p>&copy RyanLuca 2022</p>
+            </div>
+            <div class="Info">
+                <h4> importante </h4>
+                <p>esse site foi feito para fins educativos não para fins comerciais ou qualquer outro</p>
+                <p>caso queira saber mais sobre mim e sobre o progeto <a href="$">clique aqui</a></p>
+            </div>
+            <div class="Social">
+                <h4>Redes sociais</h4>
+                <div class="botao">
+                    <a href="https://www.youtube.com/channel/UC36--xtIXufE7vYzqLPGOhw" target="_blank"><i id="b1"
+                            class="fab fa-youtube"></i>YouTube</a>
+                    <a href="https://twitter.com/ryanluca007123" target="_blank"><i id="b2"
+                            class="fab fa-twitter-square"></i>Twitter</a>
+                    <a href="https://www.instagram.com/ryanluca007122/" target="_blank"><i id="b3"
+                            class="fab fa-instagram"></i></i>instagram</a>
+                    <a href="https://github.com/ryan1235" target="_blank"><i id="b4"
+                            class="fab fa-github-square"></i>github</a>
+                </div>
+        </footer>
+        <div class="btnTop">
+            <img src="img/scrollTop.png" />
         </div>
-        <div class="Info">
-            <h4> importante </h4>
-            <p>esse site foi feito para fins educativos não para fins comerciais ou qualquer outro</p>
-            <p>caso queira saber mais sobre mim e sobre o progeto <a href="$">clique aqui</a></p>
-        </div>
-        <div class="Social">
-            <h4>Redes sociais</h4>
-            <div class="botao">
-            <a href="https://www.youtube.com/channel/UC36--xtIXufE7vYzqLPGOhw" target="_blank"><i id="b1" class="fab fa-youtube"></i>YouTube</a>
-            <a href="https://twitter.com/ryanluca007123" target="_blank"><i id="b2"class="fab fa-twitter-square"></i>Twitter</a>
-            <a href="https://www.instagram.com/ryanluca007122/" target="_blank"><i id="b3" class="fab fa-instagram"></i></i>instagram</a>
-            <a href="https://github.com/ryan1235" target="_blank"><i id="b4" class="fab fa-github-square"></i>github</a>
-        </div>
-    </footer>
-    <div class="btnTop">
-        <img src="img/scrollTop.png"/>
     </div>
-</div>
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/preloader.js"></script>
 <script src="js/bntTop.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/scroll-suave.js"></script>
+
 </html>
