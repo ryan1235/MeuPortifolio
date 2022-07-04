@@ -1,4 +1,4 @@
-# Meu primeiro Portfólio 
+# :blue_heart: Meu primeiro Portfólio 
 
 Um simples Portfólio feito somente com HTML, CSS, JavaScript
 
